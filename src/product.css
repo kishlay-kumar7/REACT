@@ -1,0 +1,103 @@
+/* Cart Container */
+.carts {
+  display: flex;
+  flex-wrap: wrap; /* Allows products to wrap onto the next line */
+  gap: 90px 90px; /* First value is column gap (horizontal), second is row gap (vertical) */
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.oldprice{
+  text-decoration: line-through;
+  color: red;
+}
+/* Individual Product Card */
+.product {
+  width: 300px; /* Set the width of each product card */
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.product:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.product .price {
+  font-size: 1.2rem;
+  color: gold;
+  font-weight: bold;
+}
+
+/* Buttons Style - Inside the Product Card */
+button {
+  width: 48%; /* Adjust the width to fit side by side */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Button Background Colors */
+.buy {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.addcart {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Button Hover Effects */
+.buy:hover {
+  background-color: #45a049;
+}
+
+.addcart:hover {
+  background-color: #006f8e;
+}
+
+/* Container for buttons to place them side by side */
+.product .buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Text and Image Styling */
+.productname {
+  font-size: 1.2rem;
+  color: blue;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
